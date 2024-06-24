@@ -4,20 +4,24 @@ import { StyleSheet, TouchableOpacity, Text } from "react-native";
 export function SubButton (){
     return(
         <TouchableOpacity style={styles.button}>
-            <Text>Submit</Text>
+            <Text style={styles.text}>Submit</Text>
         </TouchableOpacity>
     );
 };
 
 const styles = StyleSheet.create({
     button:{
-        borderColor: '#000',
-        borderWidth: 1,
-        width: '100%',
+        width: '75%',
         height: 60,
-        display: 'flex',
-        alignItems: 'center',
         justifyContent: 'center',
-        marginTop: 20,
+        alignItems: 'center',
+        marginTop: 10,
+        marginBottom: 50,
+        backgroundColor: '#0000FF',
+        borderRadius: 4,
+    },
+    text: {
+        color: '#fff',
+        fontSize: 32,
     }
 });

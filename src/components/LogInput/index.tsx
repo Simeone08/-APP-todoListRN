@@ -17,14 +17,13 @@ export function LogInput (){
 };
 
 const styles = StyleSheet.create({
-    container:{
-        marginTop: 420,
-    },
+    container:{},
     input:{
         height: 40,
         width: 180,
-        borderColor: "#000",
+        marginTop: 20,
         borderWidth: 1,
         marginBottom: 10,
+        borderRadius: 4,
     },
 });

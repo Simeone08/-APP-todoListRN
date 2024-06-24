@@ -1,6 +1,7 @@
 import React from 'react';
 
 import { StyleSheet, Text, View } from 'react-native';
+import { FontAwesome6 } from '@expo/vector-icons';
 
 import { LogInput } from '../../components/LogInput';
 import { SubButton } from '../../components/SubButton';
@@ -12,7 +13,10 @@ export default function Login() {
     <View style={styles.container}>
 
         <View style={styles.logoView}>
-            <Text>LOGO</Text>
+            <FontAwesome6 
+              name='list-check'
+              size={80}
+            />
         </View>
 
         <LogInput />
@@ -26,19 +30,15 @@ export default function Login() {
 
 const styles = StyleSheet.create({
   container: {
-    display: 'flex',
+    flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
   },
   logoView: {
-    borderColor: '#000',
-    borderWidth: 1,
     width: 100,
     height: 100,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    position: 'absolute',
-    top: 200,
   },
 });

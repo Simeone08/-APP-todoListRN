@@ -1,15 +1,24 @@
 import React from "react";
 import { StyleSheet, View, TouchableOpacity, Text } from "react-native";
 
+import { FontAwesome6 } from '@expo/vector-icons';
+import { Entypo } from '@expo/vector-icons';
+
 export function AuthButton (){
     return(
         <View style={styles.container}>
 
             <TouchableOpacity style={styles.button}>
-                <Text>Gg</Text>
+                <FontAwesome6 
+                    name='google'
+                    size={40}
+                />
             </TouchableOpacity>
             <TouchableOpacity style={styles.button}>
-                <Text>IOS</Text>
+                <Entypo
+                    name='app-store'
+                    size={40}
+                />
             </TouchableOpacity>
 
         </View>
@@ -18,23 +27,28 @@ export function AuthButton (){
 
 const styles = StyleSheet.create({
     container:{
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'space-evenly',
+        height: 80,
+        width: '40%',
+        marginTop: 50,
         flexDirection: 'row',
-        width: '100%',
-        height: 100,
-        marginTop: 60,
-        borderColor: '#000',
-        borderWidth: 1,
+        alignItems: 'center',
+        justifyContent: 'space-between',
     },
     button:{
-        borderColor: '#000',
-        borderWidth: 1,
-        display: 'flex',
+        flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        height: 30,
-        width: 30,
+        height: 50,
+        width: 50,
+
+        shadowColor: "#000",
+        shadowOffset: {
+            width: 0,
+            height: 6,
+        },
+        shadowOpacity: 0.25,
+        shadowRadius: 8.94,
+
+        elevation: 13,
     },
 });

@@ -1,13 +1,14 @@
 import React from 'react';
 
-import { StyleSheet, Text, View } from 'react-native';
+import { SafeAreaView, StyleSheet } from 'react-native';
 
 import Login from './screens/Login';
+import { Home } from './screens/Home';
 
 
 export default function Main() {
   return (
-    <Login />
+      <Home />
   );
 }
 

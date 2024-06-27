@@ -4,7 +4,7 @@ import { Ionicons } from '@expo/vector-icons';
 
 import { styles } from './styles';
 
-export function Home() {
+export default function Home() {
   return (
     <View style={styles.container}>
 

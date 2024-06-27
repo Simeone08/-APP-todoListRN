@@ -8,7 +8,12 @@ import { SubButton } from '../../components/SubButton';
 import { AuthButton } from '../../components/AuthButton';
 
 
-export default function Login() {
+export default function Login({navigation}) {
+
+  function handleSubmit(){
+    navigation.navigate('home')
+  }
+
   return (
     <View style={styles.container}>
 
@@ -21,7 +26,7 @@ export default function Login() {
 
         <LogInput />
 
-        <SubButton />
+        <SubButton onPress={handleSubmit}/>
 
         <AuthButton />
     </View>

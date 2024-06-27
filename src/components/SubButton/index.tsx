@@ -1,9 +1,13 @@
 import React from "react";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
-export function SubButton (){
+
+export function SubButton ({onPress}){
     return(
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity 
+            style={styles.button}
+            onPress={onPress}
+        >
             <Text style={styles.text}>Submit</Text>
         </TouchableOpacity>
     );
